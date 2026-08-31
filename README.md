@@ -5,7 +5,7 @@ Built with HTML, CSS, and JavaScript — no frameworks.
 
 ## Screenshot
 
-![Weather App Screenshot](screenshot.png)
+![Weather App Screenshot](images/screenshot.png)
 
 ## Features
 
