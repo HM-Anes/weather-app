@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- main style -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- Font awsome library -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <title>weather forecast</title>
+    </head>
+    <body>
+        <!-- card -->
+        <div class="card">
+            <!-- seach section -->
+            <div id="search">
+                <!-- input => city name -->
+                <input
+                    id="city-name"
+                    type="text"
+                    placeholder="city name"
+                    spellcheck="false"
+                />
+                <!-- location button -->
+                <button id="location-btn">
+                    <i class="fa-solid fa-location-dot"></i>
+                </button>
+                <!-- search button -->
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <!-- error section -->
+            <div class="error hide">
+                <p>Invalid city name</p>
+            </div>
+            <!-- weather section -->
+            <div class="hide" id="weather">
+                <div class="mainDetails">
+                    <!-- weather image -->
+                    <img
+                        src="images/rain.png"
+                        alt="weather"
+                        class="weather-icon"
+                    />
+                    <!-- temperature -->
+                    <h1 class="temp">22°c</h1>
+                    <!-- city -->
+                    <h2 class="city">Algeria</h2>
+                </div>
+                <div class="details">
+                    <!-- humidity section -->
+                    <div class="col">
+                        <img src="images/humidity.png" alt="" />
+                        <div class="text">
+                            <p class="humidity">50%</p>
+                            <p>humidity</p>
+                        </div>
+                    </div>
+                    <!-- wind section -->
+                    <div class="col">
+                        <img src="images/wind.png" alt="src" />
+                        <div class="text">
+                            <p class="wind">15 km/h</p>
+                            <p>wind</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
